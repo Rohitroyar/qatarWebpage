@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Website Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(101, 2, 65);
+
+        }
+
+        .banner {
+            height: 90vh;
+            width: 50%;
+            background-color: rgb(151, 34, 108);
+            margin: auto;
+            color: white;
+            text-align: center;
+            font-size: 7px;
+        }
+
+        .logo img {
+            height: 6vh;
+            width: 40%;
+            color: black;
+            /* border: 2px black solid; */
+            margin-left: 5px;
+
+        }
+
+        .content {
+            height: 87.5vh;
+            width: 95%;
+            background-color: aliceblue;
+            margin: auto;
+        }
+
+        .logodate {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            color: rgb(101, 2, 65);
+        }
+
+        .banimg img {
+            height: 25vh;
+            width: 100%;
+            /* border: 2px black solid; */
+        }
+
+        .bookingdata {
+            color: black;
+            text-align: left;
+            font-size: 7px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        p {
+            color: black;
+            padding-top: 15px;
+            padding-right: 5px;
+        }
+
+        .menubox {
+            height: 2vh;
+            width: 96.5%;
+            color: black;
+            /* border: 2px black solid; */
+            margin-left: 5px;
+
+        }
+
+        .offerheading {
+            font-size: 10px;
+            color: rgb(101, 2, 65);
+            height: 2vh;
+            width: 100%;
+            /* border: 1px black solid; */
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .viewalloffers {
+            font-size: 8px;
+            padding-left: 70px;
+
+        }
+
+        img {
+            height: 10px;
+            width: 10px;
+        }
+
+        .fromahmedabad {
+            height: 2.5vh;
+            width: 100%;
+            background-color: rgb(101, 2, 65);
+            color: white;
+            padding-top: 4px;
+            font-size: 8px;
+            padding-left: 3px;
+        }
+
+        .countrybox {
+            height: 10vh;
+            width: 100%;
+            /* border: 1px black solid */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .country {
+            height: 5vh;
+            width: 49%;
+            /* border: 1px black solid; */
+            /* display: flex;
+            flex-wrap: wrap; */
+
+
+        }
+
+        .cname {
+            color: rgb(101, 2, 65);
+            font-size: 8px;
+            padding-right: 20px;
+            padding-top: 1px;
+
+        }
+
+        .price {
+            font-size: 8px;
+            padding-left: 3px;
+            padding-top: 5px;
+        }
+
+        .countryhr {
+            height: vh;
+            width: 50%;
+        }
+
+        .studentoffer {
+            height: 3vh;
+            width: 100%;
+            background-color: lightslategray;
+            color: white;
+            padding-top: 4.5px;
+            padding-left: 3px;
+            font-size: 8.5px;
+        }
+
+        .personimg img {
+
+            height: 10vh;
+            width: 100%;
+
+        }
+
+        .offerbox {
+            height: 11vh;
+            width: 100%;
+            display: flex;
+
+            /* border: 1px black solid; */
+
+        }
+
+        .offcont {
+            height: 11vh;
+            width: 70%;
+            padding-top: 10px;
+            padding-left: 5px;
+
+        }
+
+        .endcont {
+            height: 10vh;
+            width: 50%;
+            /* border: 1px black solid; */
+            color: white;
+            margin: auto;
+            font-size: 7px;
+            padding-top: 5px;
+        }
+
+        .scont {
+            font-size: 6px;
+            padding-top: 2px;
+        }
+
+        .readmore {
+            color: rgb(101, 2, 65);
+        }
+
+        @media only screen and (max-width:600px) {
+            .banner {
+                height: 100vh;
+                width: 100%;
+            }
+
+            .endcont {
+                background-color: rgb(101, 2, 65);
+                width: 100%;
+            }
+
+            .country {
+                height: 3vh;
+                width: 98%;
+            }
+
+            .countrybox {
+                height: 20vh;
+            }
+
+            .content {
+                height: 97.5vh;
+            }
+
+            .main {
+                height: 100vh;
+                width: 100%;
+                background-color: rgb(101, 2, 65);
+
+            }
+
+            .offerheading {
+                font-size: 7px;
+                justify-content: left;
+            }
+
+            .offcont {
+                height: 19vh;
+                width: 70%;
+                padding-top: 3px;
+                padding-left: 5px;
+            }
+
+            .offerbox {
+                height: 11vh;
+                width: 100%;
+                /* display: flex; */
+            }
+
+            .hr1 {
+                display: none;
+            }
+
+
+        }
+
+        @media only screen and (min-width:1100px) {
+            .banner {
+
+                width: 30%;
+            }
+
+            .endcont {
+
+                width: 30%;
+
+            }
+
+            .viewalloffers {
+                font-size: 8px;
+                padding-left: 70px;
+
+            }
+        }
+
+        @media only screen and (min-width:992px)and (max-width:1099px) {
+            .main {
+                background-color: rgb(101, 2, 65);
+            }
+
+            .banner {
+
+                width: 30%;
+            }
+
+            .endcont {
+                width: 40%;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="banner">
+            The best flight offers, last-minute deals and other promotions from Qatar Airways...
+            <div class="content">
+                <div class="logo">
+                    <div class="logodate"><img src="./images/2.jpeg" alt="">
+                        <p><b>1st August 2023</b></p>
+                    </div> <br>
+                    <div class="menubox">
+                        <hr>
+                        <div class="menu">
+                            Online Check-in | Bonus Qmiles | Holidays | Privilege Club
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="banimg">
+                    <img src="./images/3.jpeg" alt="">
+                </div>
+                <div class="bookingdata">
+                    Dear Subscriber, <br> <br>
+                    From its vast plains, snow-covered mountains, deep forests and strange rock formations, to soaring
+                    skyscrapers and a thunderous cultural scene, the USA is a collage of extremes. <br> <br>
+                    Book before <b>15th September 2013</b>. <br> <br>
+                    We look forward to welcoming you onboard to a truly rewarding experience. <br> <br>
+                    *Terms & Conditions Apply.
+                    <hr> <br>
+                    <div class="offerheading"> SPECIAL FLIGHT OFFERS FROM INDIA
+                        <div class="viewalloffers"> <b>view all offers</b> </div>
+                        <img src="./images/1.jpeg" alt="">
+
+                    </div>
+                    <div class="fromahmedabad"> From Ahmedabad</div> <br>
+                    <div class="countrybox">
+
+                        <div class="country">
+                            <hr>
+                            <div class="cname"><img src="./images/1.jpeg" alt=""> <b>Chicago</b> </div>
+                            <div class="price"> From <b>68,000 INR</b> Economy Class</div>
+                        </div>
+                        <div class="country">
+                            <hr>
+                            <div class="cname"><img src="./images/1.jpeg" alt=""> <b>New York</b> </div>
+                            <div class="price"> From <b>61,500 INR</b> Economy Class</div>
+                        </div>
+                        <div class="country">
+                            <hr>
+                            <div class="cname"><img src="./images/1.jpeg" alt=""> <b>Houston</b> </div>
+                            <div class="price"> From <b>76,500 INR</b> Economy Class</div>
+                            <hr>
+                        </div>
+                        <div class="country">
+                            <div class="hr1">
+                                <hr>
+                            </div>
+                            <div class="cname"><img src="./images/1.jpeg" alt=""> <b>Washington</b> </div>
+                            <div class="price"> From <b>62,500 INR</b> Economy Class</div>
+                            <hr>
+                        </div>
+                        <br>
+
+                    </div> <br> <br>
+                    Terms & Conditions Apply. <br> <br>
+                    <div class="studentoffer">
+                        EXCLUSIVE OFFER FOR STUDENT
+                    </div>
+                    <div class="offerbox">
+                        <div class="personimg">
+                            <img src="./images/4.jpeg" alt="">
+                        </div>
+                        <div class="offcont">
+                            <div class="cname">
+                                <b>Exclusive offer for student </b><br> <br>
+                            </div>
+                            Qatar Airways introduces an exclusive offer for students travelling from india to australia,
+                            canada, Europe and USA. Book and travel before <b> 31st October 2023</b> to avail additional
+                            baggage allowance.
+                            <div class="readmore">
+                                Read More <img src="./images/1.jpeg" alt=""></div>
+                        </div>
+
+
+                    </div>
+                    <hr>
+                    <div class="cname">
+                        World's 5-star airline <b> qatarairways.com</b>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="endcont">
+            Online Check-in | Bonus Qmiles | Holidays | Privilege Club <br> <br>
+            <hr>
+            <div class="scont">You have recieved this news letter after signing up either when you made a purchase
+                online or registered with us at
+                qatarairways.com <br><br>
+                @ 2023 Qatar Airways. World's 5-star airline. All rights reserved. Review our policy.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    </div>
+    </div>
+</body>
+
+</html>
